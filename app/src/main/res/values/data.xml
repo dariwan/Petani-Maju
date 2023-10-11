@@ -40,4 +40,18 @@
                 Pemupukan pertama dilakukan dengan cara ditugal, pemupukan kedua dengan cara ditabur di permukaan tanah dan dilanjutkan dengan pembubunan. Pemupukan ketiga sama dengan pemupukan kedua. Tujuan dari cara ini adalah mendukung pertumbuhan tanaman jagung yang optimal dan menghasilkan produktivitas sesuai dengan target yang diharapkan.</item>
         <item>Pemupukan adalah pemberian unsur hara kepada tanaman, mirip dengan makanan bagi manusia. Pemupukan berimbang adalah pemenuhan unsur hara yang seimbang dalam tanah, sesuai dengan kebutuhan tanaman dan tanah. Perangkat uji tanah sawah (PUTS) digunakan untuk menentukan rekomendasi pemupukan yang tepat. Di contoh kelompok tani Subur di Desa Tlogokotes, masalah pemupukan mencakup kesulitan mendapatkan pupuk subsidi, kurangnya pemahaman petani tentang pupuk organik, dan kurangnya pemahaman tentang jenis pupuk dan cara aplikasinya. Melalui sosialisasi pemupukan berimbang, petani mendapatkan rekomendasi pemupukan yang sesuai dengan kondisi tanah mereka, seperti penggunaan kapur untuk meningkatkan pH tanah dan pemupukan organik untuk pembenah tanah.</item>
     </string-array>
+
+    <string-array name="title_home">
+        <item>Kalium Klorida</item>
+        <item>NPK Padi</item>
+        <item>Urea</item>
+        <item>Pupuk 1</item>
+    </string-array>
+
+    <integer-array name="price_home">
+        <item>578000</item>
+        <item>278000</item>
+        <item>678000</item>
+        <item>978000</item>
+    </integer-array>
 </resources>

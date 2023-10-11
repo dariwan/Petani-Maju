@@ -11,7 +11,6 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/bg_home_page_top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +23,8 @@
         android:id="@+id/imageView2"
         android:layout_width="75dp"
         android:layout_height="71dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/img_splash_screen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -88,20 +88,19 @@
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="200dp"
         android:src="@drawable/bg_home_page_midle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="350dp"
-        android:layout_height="250dp"
+        android:layout_height="160dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/bg_home_page_midle2"
@@ -110,14 +109,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="67dp"
         android:layout_height="67dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/ic_home_pembelian"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -127,16 +126,17 @@
         android:layout_width="67dp"
         android:layout_height="67dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/ic_home_education"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
     <ImageView
+        android:id="@+id/imageView11"
         android:layout_width="67dp"
         android:layout_height="67dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/ic_home_comunity"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -154,15 +154,63 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppinsmedium"
         android:text="@string/video_edukasi"
         android:textStyle="bold"
-        android:layout_marginStart="40dp"
-
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/komunitas"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="38dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/bg_home_page_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/flash_sale"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/flash_sale_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
