@@ -12,5 +12,11 @@
     <string name="judul">Judul</string>
     <string name="desc">Desc</string>
     <string name="title">title</string>
+    <string name="product_name">product name</string>
+    <string name="petani_maju">Petani Maju</string>
+    <string name="lokasi_user">Lokasi User</string>
+    <string name="greeting_home">Hi, UserName \nSelamat datang diaplikasi Pertani Maju</string>
+    <string name="video_edukasi">Video\n  Edukasi</string>
+    <string name="pembelian">Pembelian</string>
 
 </resources>
