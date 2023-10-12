@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="8dp"
     android:layout_marginTop="8dp"
-    android:backgroundTint="@color/white"
+    android:backgroundTint="@color/old_green"
     android:clickable="true"
     android:focusable="true"
     app:cardCornerRadius="16dp"
@@ -17,6 +17,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/old_green"
         android:layout_margin="9dp">
 
         <com.google.android.material.card.MaterialCardView
@@ -24,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardCornerRadius="16dp"
+            android:backgroundTint="@color/old_green"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:strokeColor="@color/white"

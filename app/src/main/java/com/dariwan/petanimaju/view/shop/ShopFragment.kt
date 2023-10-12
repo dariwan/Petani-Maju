@@ -1,6 +1,5 @@
 package com.dariwan.petanimaju.view.shop
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,66 +7,77 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dariwan.petanimaju.R
-import com.dariwan.petanimaju.adapter.EducationAdapter
-import com.dariwan.petanimaju.model.EducationModel
-import com.dariwan.petanimaju.view.education.DetailEducationActivity
+import com.dariwan.petanimaju.adapter.ShopAdapter
+import com.dariwan.petanimaju.databinding.FragmentShopBinding
+import com.dariwan.petanimaju.model.ShopModel
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ShopFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ShopFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private var _binding: FragmentShopBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        _binding = FragmentShopBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_shop, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupAction()
+    }
+
+    private fun setupAction() {
+        binding.rvShop.layoutManager = LinearLayoutManager(requireContext())
+        val dataList: MutableList<ShopModel> = mutableListOf()
+        val shopTitle: Array<String> = resources.getStringArray(R.array.title_home)
+        val shopPrice: IntArray = resources.getIntArray(R.array.price_home)
+
+        val shopImage : List<Int> = listOf(
+            R.drawable.img_product_1,
+            R.drawable.img_product_2,
+            R.drawable.img_product_3,
+            R.drawable.img_product_4,
+        )
+
+        shopTitle.forEachIndexed { index, name ->
+            dataList.add(ShopModel(shopImage.get(index), name, shopPrice[index], false))
+        }
+
+        val adapter = ShopAdapter(dataList)
+        binding.rvShop.adapter = adapter
+
+        adapter.setOnItemClickCallback(object : ShopAdapter.OnItemClickCallback{
+            override fun onItemClicked(data: ShopModel) {
+                adapter.notifyDataSetChanged()
+
+                val totalPrice = calculateTotalPrice(dataList)
+                binding.tvNominal.text = "Rp. $totalPrice"
+            }
+
+        })
 
     }
 
-
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ShopFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            ShopFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    private fun calculateTotalPrice(dataList: List<ShopModel>): Int {
+        var totalPrice = 0
+        for (item in dataList) {
+            if (item.isSelected) {
+                totalPrice += item.price
             }
+        }
+        println("Rp. $totalPrice")
+        return totalPrice
     }
 }
