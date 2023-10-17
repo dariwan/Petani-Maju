@@ -58,26 +58,21 @@ class ShopFragment : Fragment() {
         val adapter = ShopAdapter(dataList)
         binding.rvShop.adapter = adapter
 
-        adapter.setOnItemClickCallback(object : ShopAdapter.OnItemClickCallback{
-            override fun onItemClicked(data: ShopModel) {
-                adapter.notifyDataSetChanged()
+        val totalPrice = calculateTotalPrice(dataList)
+        binding.tvNominal.text = "Rp. $totalPrice"
 
-                val totalPrice = calculateTotalPrice(dataList)
-                binding.tvNominal.text = "Rp. $totalPrice"
-            }
-
-        })
 
     }
 
     private fun calculateTotalPrice(dataList: List<ShopModel>): Int {
         var totalPrice = 0
+
         for (item in dataList) {
             if (item.isSelected) {
                 totalPrice += item.price
             }
+            totalPrice
         }
-        println("Rp. $totalPrice")
         return totalPrice
     }
 }

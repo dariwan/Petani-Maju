@@ -4,18 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dariwan.petanimaju.databinding.ProductItemBinding
+import com.dariwan.petanimaju.model.EducationModel
 import com.dariwan.petanimaju.model.ShopModel
 
 class ShopAdapter(private val list: List<ShopModel>): RecyclerView.Adapter<ShopAdapter.ViewHolder>() {
-
-    private lateinit var onItemClickCallback: OnItemClickCallback
-    interface OnItemClickCallback {
-        fun onItemClicked(data: ShopModel)
-    }
-
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
-        this.onItemClickCallback = onItemClickCallback
-    }
 
     class ViewHolder (val binding: ProductItemBinding): RecyclerView.ViewHolder(binding.root)
 
@@ -29,23 +21,11 @@ class ShopAdapter(private val list: List<ShopModel>): RecyclerView.Adapter<ShopA
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val (image, title, price, isSelected) = list[position]
+        val (image, title, price) = list[position]
 
         holder.binding.imgProduct.setImageResource(image)
         holder.binding.tvProductName.text = title
         holder.binding.tvPrice.text = price.toString()
-        holder.binding.checkBoxProduct.isChecked = isSelected
 
-
-        holder.binding.checkBoxProduct.setOnCheckedChangeListener { _, isChecked ->
-            list[position].isSelected = isChecked
-            notifyDataSetChanged()
-            if (isChecked) {
-                val newPrice = price + price
-                "Rp.${newPrice}"
-            } else{
-                "Rp.${price}"
-            }
-        }
     }
 }

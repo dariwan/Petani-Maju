@@ -54,4 +54,7 @@
         <item>678000</item>
         <item>978000</item>
     </integer-array>
+
+    <bool name="bool_true">true</bool>
+    <bool name="bool_false">false</bool>
 </resources>
