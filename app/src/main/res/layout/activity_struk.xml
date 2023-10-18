@@ -38,10 +38,10 @@
         android:id="@+id/squareImageView"
         android:layout_width="220dp"
         android:layout_height="70dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="180dp"
         android:background="@color/old_green"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintHorizontal_bias="0.282"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
