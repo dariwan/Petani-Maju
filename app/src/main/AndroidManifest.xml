@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PetaniMaju"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
+            android:name=".view.home.penjualan.PenjualanActivity"
+=======
             android:name=".view.shop.StrukActivity"
             android:exported="false" />
         <activity
@@ -20,6 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".view.shop.BayarActivity"
+>>>>>>> 79323af82b7cd72cba4df345441494a0782d58b1
             android:exported="false" />
         <activity
             android:name=".view.shop.MetodeActivity"

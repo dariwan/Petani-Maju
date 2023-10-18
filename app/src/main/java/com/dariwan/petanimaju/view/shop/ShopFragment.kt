@@ -75,8 +75,20 @@ class ShopFragment : Fragment() {
             if (item.isSelected) {
                 totalPrice += item.price
             }
+<<<<<<< HEAD
+
+        })
+
+
+        binding.button.setOnClickListener {
+            val intent = Intent(requireContext(), MetodeActivity::class.java)
+            startActivity(intent)
+        }
+
+=======
             totalPrice
         }
         return totalPrice
+>>>>>>> 79323af82b7cd72cba4df345441494a0782d58b1
     }
 }
