@@ -12,16 +12,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="< Kembali"
-        android:textSize="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="37dp" />
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="335dp"
-        tools:layout_editor_absoluteY="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -29,95 +37,139 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12 Oktober 2023"
-        android:textSize="24dp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="115dp" />
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kota Terbaik"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="148dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="364dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:backgroundTint="#F8B718"
         android:text="Kota Sekitar"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="201dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kota Bakti"
-        android:textSize="26dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="292dp" />
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/img_weather_1"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="266dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kota Rahmat"
-        android:textSize="26dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="399dp" />
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/img_weather_2"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kota Bahagia"
-        android:textSize="26dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="506dp" />
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/img_weather_2"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="599dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kota Wangi"
-        android:textSize="26dp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="619dp" />
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/img_weather_3"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="488dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
