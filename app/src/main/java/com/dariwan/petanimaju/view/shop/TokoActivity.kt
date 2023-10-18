@@ -26,10 +26,11 @@ class TokoActivity : AppCompatActivity() {
         val tokoAddres: Array<String> = resources.getStringArray(R.array.almt_toko)
 
         val tokoImage : List<Int> = listOf(
-            R.drawable.img_product_1,
-            R.drawable.img_product_2,
-            R.drawable.img_product_3,
-            R.drawable.img_product_4,
+            R.drawable.toko_1,
+            R.drawable.toko_2,
+            R.drawable.toko_3,
+            R.drawable.toko_4,
+            R.drawable.toko_5,
         )
 
         tokoTitle.forEachIndexed { index, name ->

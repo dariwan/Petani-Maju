@@ -24,18 +24,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="155dp"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="70dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/pasurya"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginHorizontal="70dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:src="@drawable/pasurya"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
 
     <View
         android:id="@+id/view4"
@@ -53,12 +53,13 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginTop="28dp"
         android:text="MUHAMMAD SURYA SAPUTRA"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView4"
