@@ -5,162 +5,161 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DAE3BB"
-    tools:context=".MainActivity">
+   >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="< Kembali"
-        android:textSize="26dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="37dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="26dp"-->
+<!--        tools:layout_editor_absoluteX="16dp"-->
+<!--        tools:layout_editor_absoluteY="37dp" />-->
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        tools:layout_editor_absoluteX="335dp"
-        tools:layout_editor_absoluteY="19dp"
-        tools:srcCompat="@tools:sample/avatars" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        tools:layout_editor_absoluteX="335dp"-->
+<!--        tools:layout_editor_absoluteY="19dp"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12 Oktober 2023"
-        android:textSize="24dp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="115dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kota Terbaik"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="148dp" />
+<!--        android:textSize="24dp"-->
+<!--        tools:layout_editor_absoluteX="25dp"-->
+<!--        tools:layout_editor_absoluteY="115dp" />-->
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="364dp"
-        android:layout_height="45dp"
-        android:backgroundTint="#F8B718"
-        android:text="Prediksi Minggu Ini"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="201dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Kota Terbaik"-->
+<!--        tools:layout_editor_absoluteX="24dp"-->
+<!--        tools:layout_editor_absoluteY="148dp" />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="268dp">
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="364dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:backgroundTint="#F8B718"-->
+<!--        android:text="Prediksi Minggu Ini"-->
+<!--        android:textColor="@color/black"-->
+<!--        tools:layout_editor_absoluteX="23dp"-->
+<!--        tools:layout_editor_absoluteY="201dp" />-->
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="250dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        tools:layout_editor_absoluteX="39dp"-->
+<!--        tools:layout_editor_absoluteY="268dp">-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Senin                                                                          35 °C / 95 °F" />
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="250dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Senin                                                                          35 °C / 95 °F" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Selasa                                                                    37 °C / 98.6 °F" />
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Selasa                                                                    37 °C / 98.6 °F" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Rabu                                                                       34 °C / 93.2 °F" />
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Rabu                                                                       34 °C / 93.2 °F" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Kamis                                                                     33 °C / 91.4 °F" />
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Jum'at                                                                        35 °C / 95 °F" />
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Kamis                                                                     33 °C / 91.4 °F" />-->
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Sabtu                                                                      36 °C / 96.8 °F" />
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Jum'at                                                                        35 °C / 95 °F" />-->
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="      Minggu                                                                   37 °C / 98.6 °F" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Sabtu                                                                      36 °C / 96.8 °F" />-->
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
 
-        <View
-            android:layout_width="370dp"
-            android:layout_height="2dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:background="#E91E63"
-            android:backgroundTint="@color/black" />
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="      Minggu                                                                   37 °C / 98.6 °F" />-->
 
-    </LinearLayout>
+<!--        <View-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#E91E63"-->
+<!--            android:backgroundTint="@color/black" />-->
+
+<!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
