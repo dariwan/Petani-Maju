@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dariwan.petanimaju.databinding.ProductItemBinding
-import com.dariwan.petanimaju.model.EducationModel
 import com.dariwan.petanimaju.model.ShopModel
 
 class ShopAdapter(private val list: List<ShopModel>): RecyclerView.Adapter<ShopAdapter.ViewHolder>() {

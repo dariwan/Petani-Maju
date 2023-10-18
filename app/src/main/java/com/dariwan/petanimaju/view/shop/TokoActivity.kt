@@ -1,41 +1,25 @@
 package com.dariwan.petanimaju.view.shop
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dariwan.petanimaju.R
 import com.dariwan.petanimaju.adapter.TokoAdapter
-import com.dariwan.petanimaju.databinding.FragmentTokoBinding
+import com.dariwan.petanimaju.databinding.ActivityTokoBinding
 import com.dariwan.petanimaju.model.TokoModel
 
-
-class TokoFragment : Fragment() {
-    private var _binding: FragmentTokoBinding? = null
-    private val binding get() = _binding!!
-
+class TokoActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityTokoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityTokoBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    }
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentTokoBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_toko, container, false)
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
         setupAction()
     }
+
     private fun setupAction() {
-        binding.rvToko.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvToko.layoutManager = LinearLayoutManager(this)
         val dataList: MutableList<TokoModel> = mutableListOf()
         val tokoTitle: Array<String> = resources.getStringArray(R.array.name_toko)
         val tokoAddres: Array<String> = resources.getStringArray(R.array.almt_toko)
@@ -52,9 +36,5 @@ class TokoFragment : Fragment() {
         }
         val adapter= TokoAdapter(dataList)
         binding.rvToko.adapter = adapter
-
-
-
-
     }
 }
