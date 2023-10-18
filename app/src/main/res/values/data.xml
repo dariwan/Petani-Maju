@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title_education">
+        <item>Ini Beberapa Cara Memberikan Pupuk pada Tanaman</item>
+        <item>MENGUKUR PH TANAH</item>
+        <item>Teknik Pemupukan Tanaman Padi Yang Tidak Semua Orang Tahu</item>
+        <item>Cara membuat pupuk organik cair</item>
+        <item>PEMUPUKAN PADA TANAMAN JAGUNG</item>
+        <item>Pemupukan Berimbang,, Hasil Maksimal</item>
+    </string-array>
+
+    <string-array name="desc_education">
+        <item>Proses pemupukan merupakan aspek penting dalam pertumbuhan tanaman yang bertujuan untuk memberikan nutrisi tambahan pada tanah. Nutrisi ini dibagi menjadi makronutrien seperti nitrogen, fosfor, dan kalium, serta mikronutrien seperti sulfur, kalsium, magnesium, besi, tembaga, seng, dan lainnya.
+                Ada beberapa metode pemupukan yang dapat digunakan:
+                Broadcasting: Metode ini melibatkan penyebaran pupuk secara merata ke tanah di sekitar tanaman. Ini sebaiknya dilakukan setelah pembajakan terakhir atau sehari sebelum tanam. Pupuk kemudian diinjak-injak untuk memastikan masuk ke dalam tanah.
+                Ring Placement: Metode ini melibatkan penaburan pupuk di antara larikan tanaman dan menutupnya kembali dengan tanah. Metode ini umumnya digunakan untuk tanaman tahunan seperti buah-buahan, kopi, teh, kelapa, dan lainnya. Pupuk ditebarkan melingkar pada tanaman dengan jarak tegak lurus daun terjauh, lalu ditutup dengan tanah.</item>
+        <item>Pengukuran pH tanah adalah metode untuk menentukan tingkat keasaman atau basa tanah, diukur dengan skala pH dari 0 hingga 14. Sifat asam memiliki pH antara 0 hingga 7, sementara sifat basa memiliki pH antara 7 hingga 14. Sebagai contoh, jus jeruk dan air aki memiliki pH antara 0 hingga 7, sedangkan air laut dan cairan pemutih memiliki sifat basa (juga disebut alkaline) dengan pH 7 sampai 14. Air murni adalah netral dengan nilai pH 7. pH tanah memengaruhi kemampuan tanaman untuk menyerap unsur hara dari tanah. Akar tanaman akan lebih mudah menyerap nutrisi jika pH tanah netral.
+                Ada beberapa metode pengukuran pH tanah:
+                1. **Pengukuran dengan Kertas Lakmus atau pH Indikator**:
+                   - Campurkan sampel tanah dengan air bening dalam gelas.
+                   - Aduk hingga merata dan biarkan beberapa menit hingga tanah mengendap.
+                   - Masukkan kertas lakmus atau pH indikator ke dalam campuran tanah-air.
+                   - Tunggu hingga kertas lakmus atau pH indikator berubah warna.
+                   - Cocokkan warna dengan petunjuk pada kemasan untuk menentukan pH tanah.
+                2. **Pengukuran Secara Tradisional**:
+                   - Potong kunyit menjadi dua bagian.
+                   - Satu potongan kunyit dimasukkan ke dalam tanah basah yang akan diukur pH-nya.
+                   - Tunggu sekitar 30 menit.
+                   - Perhatikan perubahan warna pada potongan kunyit.
+                   - Jika warnanya pudar, tanah cenderung asam. Jika warnanya tetap cerah, pH tanah netral. Jika warna kunyit berubah biru, tanah cenderung basa.
+                Pengukuran pH dengan kertas lakmus atau pH indikator memberikan hasil yang lebih akurat dibandingkan dengan metode tradisional, tetapi metode tradisional dapat memberikan gambaran kasar mengenai tingkat keasaman atau kebasaan tanah.</item>
+        <item>Pupuk adalah kunci produktivitas tanaman pangan, tetapi penggunaan pupuk kimia berlebihan dapat berdampak buruk pada lingkungan dan mengurangi efisiensi. Efisiensi pemupukan dipengaruhi oleh berbagai faktor termasuk jenis tanah, manajemen hama, varietas tanaman, waktu tanam, dan jenis pupuk.
+                Untuk meningkatkan efisiensi, kita dapat menggunakan alat bantu seperti Bagan Warna Daun (BWD) untuk menentukan kebutuhan pupuk nitrogen. BWD memungkinkan petani untuk memantau tingkat kehijauan daun tanaman dan memberikan pupuk hanya jika diperlukan.
+                Teknik pemupukan tanaman padi sangat bervariabel tergantung pada kondisi tanah dan rekomendasi dosis pupuk. Ini melibatkan kombinasi pupuk nitrogen (urea), fosfor (SP36), dan kalium (KCl) dalam perbandingan yang berbeda, tergantung pada umur tanaman.
+                Pentingnya memahami kebutuhan tanaman dan menggunakan alat bantu seperti BWD memastikan penggunaan pupuk yang efisien dan berkelanjutan untuk pertanian.</item>
+        <item>Pupuk organik cair ada dua tipe: pertama adalah yang dilarutkan dari pupuk organik padat ke dalam air, sedangkan yang kedua adalah yang dibuat melalui fermentasi bahan organik yang belum terkompos. Tipe pertama mudah mengendap dan harus digunakan segera. Tipe kedua lebih stabil dan efektif jika diberikan pada daun, batang, atau bunga. Namun, pemberiannya harus hati-hati agar tidak overdosis. Pupuk organik cair tidak boleh menjadi pupuk utama, melainkan sebagai tambahan, dan sebaiknya kaya akan unsur hara mikro.
+                Proses pembuatan pupuk organik cair tipe kedua melibatkan bahan-bahan organik seperti kotoran ayam, dedak, hijauan, gula merah, bioaktivator, dan air. Bahan-bahan ini dicampur dalam tong kedap udara dan difermentasikan dalam kondisi anaerob selama 7-10 hari. Setelah matang, cairan dipisahkan dari ampasnya dan bisa digunakan sebagai pupuk organik cair.</item>
+        <item>Program peningkatan produksi jagung di kelompok tani Sumber Rejeki Desa Puru memerlukan pemupukan yang tepat. Saat ini, sering terjadi pemupukan yang tidak tepat, terlalu banyak, dan tergantung pada satu jenis pupuk saja karena kurangnya pengetahuan. Rekomendasi pemupukan yang tepat adalah dosis urea 200 kg/ha dan pupuk majemuk NPK (Phonska) 300 kg/ha.
+                Pemupukan dilakukan dalam tiga tahap: pertama, saat tanaman berumur 7-10 hari dengan dosis Urea 100 kg/ha dan Phonska 150 kg/ha. Kedua, saat tanaman berumur 20-25 hari dengan dosis Urea 50 kg/ha dan Phonska 100 kg/ha. Ketiga, saat tanaman berumur 35-40 hari dengan dosis Urea 50 kg/ha dan Phonska 50 kg/ha.
+                Pemupukan pertama dilakukan dengan cara ditugal, pemupukan kedua dengan cara ditabur di permukaan tanah dan dilanjutkan dengan pembubunan. Pemupukan ketiga sama dengan pemupukan kedua. Tujuan dari cara ini adalah mendukung pertumbuhan tanaman jagung yang optimal dan menghasilkan produktivitas sesuai dengan target yang diharapkan.</item>
+        <item>Pemupukan adalah pemberian unsur hara kepada tanaman, mirip dengan makanan bagi manusia. Pemupukan berimbang adalah pemenuhan unsur hara yang seimbang dalam tanah, sesuai dengan kebutuhan tanaman dan tanah. Perangkat uji tanah sawah (PUTS) digunakan untuk menentukan rekomendasi pemupukan yang tepat. Di contoh kelompok tani Subur di Desa Tlogokotes, masalah pemupukan mencakup kesulitan mendapatkan pupuk subsidi, kurangnya pemahaman petani tentang pupuk organik, dan kurangnya pemahaman tentang jenis pupuk dan cara aplikasinya. Melalui sosialisasi pemupukan berimbang, petani mendapatkan rekomendasi pemupukan yang sesuai dengan kondisi tanah mereka, seperti penggunaan kapur untuk meningkatkan pH tanah dan pemupukan organik untuk pembenah tanah.</item>
+    </string-array>
+
+    <string-array name="title_home">
+        <item>Kalium Klorida</item>
+        <item>NPK Padi</item>
+        <item>Urea</item>
+        <item>Pupuk 1</item>
+    </string-array>
+
+    <integer-array name="price_home">
+        <item>578000</item>
+        <item>278000</item>
+        <item>678000</item>
+        <item>978000</item>
+    </integer-array>
+
+    <bool name="bool_true">true</bool>
+    <bool name="bool_false">false</bool>
+</resources>

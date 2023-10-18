@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Petani Maju</string>
+    <string name="forum">Forum</string>
+    <string name="home">Home</string>
+    <string name="shop">Shop</string>
+    <string name="user">User</string>
+    <string name="education">Education</string>
+    <string name="pasar">Pasar</string>
+    <string name="harga">Harga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="judul">Judul</string>
+    <string name="desc">Desc</string>
+    <string name="title">title</string>
+    <string name="product_name">product name</string>
+    <string name="petani_maju">Petani Maju</string>
+    <string name="lokasi_user">Lokasi User</string>
+    <string name="greeting_home">Hi, UserName \nSelamat datang diaplikasi Pertani Maju</string>
+    <string name="video_edukasi">  Video\nEdukasi</string>
+    <string name="pembelian">Pembelian</string>
+    <string name="komunitas">Komunitas</string>
+    <string name="flash_sale">Flash Sale</string>
+    <string name="total">Total</string>
+    <string name="nominal">nominal</string>
+
+</resources>
