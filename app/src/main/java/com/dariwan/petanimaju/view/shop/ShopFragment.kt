@@ -59,8 +59,8 @@ class ShopFragment : Fragment() {
         val adapter = ShopAdapter(dataList)
         binding.rvShop.adapter = adapter
 
-        val totalPrice = calculateTotalPrice(dataList)
-        binding.tvNominal.text = "Rp. $totalPrice"
+        //val totalPrice = calculateTotalPrice(dataList)
+        binding.tvNominal.text = "Rp."
 
         binding.button.setOnClickListener {
             val intent = Intent(requireContext(), MetodeActivity::class.java)
@@ -68,27 +68,18 @@ class ShopFragment : Fragment() {
         }
     }
 
-    private fun calculateTotalPrice(dataList: List<ShopModel>): Int {
-        var totalPrice = 0
-
-        for (item in dataList) {
-            if (item.isSelected) {
-                totalPrice += item.price
-            }
-<<<<<<< HEAD
-
-        })
-
-
-        binding.button.setOnClickListener {
-            val intent = Intent(requireContext(), MetodeActivity::class.java)
-            startActivity(intent)
-        }
-
-=======
-            totalPrice
-        }
-        return totalPrice
->>>>>>> 79323af82b7cd72cba4df345441494a0782d58b1
-    }
+//    private fun calculateTotalPrice(dataList: List<ShopModel>): Int {
+//        var totalPrice = 0
+//
+//        for (item in dataList) {
+//            if (item.isSelected) {
+//                totalPrice += item.price
+//            }
+//
+//        })
+//
+//            totalPrice
+//        }
+//        return totalPrice
+//    }
 }

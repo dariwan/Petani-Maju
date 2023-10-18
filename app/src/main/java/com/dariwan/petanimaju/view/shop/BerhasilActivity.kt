@@ -4,29 +4,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dariwan.petanimaju.R
+import com.dariwan.petanimaju.databinding.ActivityBerhasilBinding
 import com.dariwan.petanimaju.databinding.ActivityStrukBinding
 
 class BerhasilActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityBerhasilBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_berhasil)
+        binding = ActivityBerhasilBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        setupAction()
     }
 
-    class BerhasilActivity : AppCompatActivity() {
-        private lateinit var binding: ActivityStrukBinding
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            binding = ActivityStrukBinding.inflate(layoutInflater)
-            setContentView(binding.root)
-
-            setupAction()
-        }
-
-        private fun setupAction() {
-            binding.button1.setOnClickListener {
-                val intent = Intent(this, StrukActivity::class.java)
-                startActivity(intent)
-            }
+    private fun setupAction() {
+        binding.btnBerhasil.setOnClickListener {
+            val intent = Intent(this, StrukActivity::class.java)
+            startActivity(intent)
         }
     }
 }
