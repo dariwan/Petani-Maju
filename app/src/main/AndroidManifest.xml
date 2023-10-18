@@ -13,13 +13,13 @@
         android:theme="@style/Theme.PetaniMaju"
         tools:targetApi="31">
         <activity
+            android:name=".view.shop.TokoActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.forum.fitur_chat"
             android:exported="false" />
         <activity
             android:name=".view.education.DetailEducationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".view.education.InformationActivity"
             android:exported="false" />
         <activity
             android:name=".view.MainActivity"
