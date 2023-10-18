@@ -55,6 +55,20 @@
         <item>978000</item>
     </integer-array>
 
+    <string-array name="name_toko">
+        <item>qkqkqk</item>
+        <item>qlqlql</item>
+        <item>lqlqlq</item>
+        <item>qlqlql</item>
+    </string-array>
+
+    <string-array name="almt_toko">
+        <item>qlqlql</item>
+        <item>qlqlql</item>
+        <item>qlqlql</item>
+        <item>qlqlql</item>
+    </string-array>
+
     <bool name="bool_true">true</bool>
     <bool name="bool_false">false</bool>
 </resources>

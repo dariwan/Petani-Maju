@@ -4,19 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    android:background="@color/cream"
-    tools:context=".view.education.EducationFragment">
+    tools:context=".view.shop.TokoActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_education"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="104dp"
-        tools:listitem="@layout/education_item"
+        android:id="@+id/rv_toko"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_toko" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

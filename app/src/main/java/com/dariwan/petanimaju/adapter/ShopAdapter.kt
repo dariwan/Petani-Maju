@@ -1,10 +1,10 @@
 package com.dariwan.petanimaju.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dariwan.petanimaju.databinding.ProductItemBinding
-import com.dariwan.petanimaju.model.EducationModel
 import com.dariwan.petanimaju.model.ShopModel
 
 class ShopAdapter(private val list: List<ShopModel>): RecyclerView.Adapter<ShopAdapter.ViewHolder>() {
@@ -20,12 +20,27 @@ class ShopAdapter(private val list: List<ShopModel>): RecyclerView.Adapter<ShopA
         return list.size
     }
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+    interface OnItemClickCallback {
+        fun onItemClicked(data: ShopModel)
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val (image, title, price) = list[position]
+        val (image, title, price, isChecked) = list[position]
 
         holder.binding.imgProduct.setImageResource(image)
         holder.binding.tvProductName.text = title
-        holder.binding.tvPrice.text = price.toString()
+        holder.binding.tvPrice.text = "Rp. ${price.toString()}"
 
+        holder.binding.checkBoxProduct.setOnCheckedChangeListener { _, isCheck ->
+            list[position].isSelected = isChecked
+            onItemClickCallback.onItemClicked(list[holder.adapterPosition])
+            notifyDataSetChanged()
+        }
     }
 }
