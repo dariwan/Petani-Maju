@@ -20,9 +20,10 @@ class TokoAdapter (private val list: List<TokoModel>): RecyclerView.Adapter<Toko
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val (titleImage, title) = list[position]
+        val (titleImage, title, adress) = list[position]
         holder.binding.imgToko.setImageResource(titleImage)
-        holder.binding.tvAddres.text = title
+        holder.binding.tvTokoName.text = title
+        holder.binding.tvAddres.text = adress
 
     }
 

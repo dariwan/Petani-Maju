@@ -10,6 +10,7 @@ import com.dariwan.petanimaju.model.TokoModel
 
 class TokoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTokoBinding
+    private lateinit var tokoAdapter: TokoAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTokoBinding.inflate(layoutInflater)
@@ -32,9 +33,9 @@ class TokoActivity : AppCompatActivity() {
         )
 
         tokoTitle.forEachIndexed { index, name ->
-            dataList.add(TokoModel(tokoImage.get(index), name, tokoAddres.toString()))
+            dataList.add(TokoModel(tokoImage[index], name, tokoAddres[index]))
         }
-        val adapter= TokoAdapter(dataList)
-        binding.rvToko.adapter = adapter
+        tokoAdapter = TokoAdapter(dataList)
+        binding.rvToko.adapter = tokoAdapter
     }
 }
