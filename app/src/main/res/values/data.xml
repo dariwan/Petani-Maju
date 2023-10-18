@@ -56,17 +56,19 @@
     </integer-array>
 
     <string-array name="name_toko">
-        <item>qkqkqk</item>
-        <item>qlqlql</item>
-        <item>lqlqlq</item>
-        <item>qlqlql</item>
+        <item>Tani Makmur</item>
+        <item>Tani Bintang</item>
+        <item>Bansari Greeen</item>
+        <item>Tani Indonesia</item>
+        <item>Rumah Tani</item>
     </string-array>
 
     <string-array name="almt_toko">
-        <item>qlqlql</item>
-        <item>qlqlql</item>
-        <item>qlqlql</item>
-        <item>qlqlql</item>
+        <item>Gg belimbing, panggungharjo, bantul, yogyakarta</item>
+        <item>Gg pepaya, sewon, bantul, yogyakarta</item>
+        <item>Krapyak, Kota yogyakarta, Yogyakarta</item>
+        <item>Gg jambu, sewon, bantul, yogyakarta</item>
+        <item>Gg pepaya no 5, sewon, bantul, yogyakarta</item>
     </string-array>
 
     <bool name="bool_true">true</bool>
