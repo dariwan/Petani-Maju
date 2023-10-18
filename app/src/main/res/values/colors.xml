@@ -9,4 +9,7 @@
     <color name="old_white">#FFF7EC</color>
     <color name="green">#D6ECCD</color>
     <color name="grey">#737070</color>
+
+    <color name="hijau">#0FB881</color>
+    <color name="hijau_tua">#0C9367</color>
 </resources>

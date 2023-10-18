@@ -1,5 +1,6 @@
 package com.dariwan.petanimaju.view.shop
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -83,7 +84,10 @@ class ShopFragment : Fragment() {
         })
 
 
-
+        binding.button.setOnClickListener {
+            val intent = Intent(requireContext(), MetodeActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

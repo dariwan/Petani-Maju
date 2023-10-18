@@ -11,6 +11,7 @@ import com.dariwan.petanimaju.R
 import com.dariwan.petanimaju.adapter.FlashSaleAdapter
 import com.dariwan.petanimaju.databinding.FragmentHomeBinding
 import com.dariwan.petanimaju.model.ProductModel
+import com.dariwan.petanimaju.view.home.penjualan.PenjualanActivity
 import com.dariwan.petanimaju.view.shop.TokoActivity
 
 class HomeFragment : Fragment() {
@@ -61,6 +62,11 @@ class HomeFragment : Fragment() {
         binding.rvHome.adapter = adapter
         binding.imageView7.setOnClickListener{
             val intent = Intent(requireContext(), TokoActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.icPenjualan.setOnClickListener {
+            val intent = Intent(requireContext(), PenjualanActivity::class.java)
             startActivity(intent)
         }
     }

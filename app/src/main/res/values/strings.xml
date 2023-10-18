@@ -16,11 +16,13 @@
     <string name="petani_maju">Petani Maju</string>
     <string name="lokasi_user">Lokasi User</string>
     <string name="greeting_home">Hi, UserName \nSelamat datang diaplikasi Pertani Maju</string>
-    <string name="video_edukasi">  Video\nEdukasi</string>
+    <string name="video_edukasi">Penjualan</string>
     <string name="pembelian">Pembelian</string>
     <string name="komunitas">Komunitas</string>
     <string name="flash_sale">Flash Sale</string>
     <string name="total">Total</string>
     <string name="nominal">nominal</string>
+    <string name="toko_terdekat">Toko\nTerdekat</string>
+
 
 </resources>
