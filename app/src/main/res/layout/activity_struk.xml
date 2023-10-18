@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.shop.StrukActivity"
+    android:background="@color/cream">
+
+
+    <ImageView
+        android:id="@+id/alas"
+        android:layout_width="312dp"
+        android:layout_height="469dp"
+        android:layout_marginTop="142dp"
+        android:src="@drawable/bg_home_page_midle2"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/old_green"
+        android:text="History"
+        android:textColor="@color/black" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="@color/old_green"
+        android:text="Receipt"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="172dp"
+        android:paddingLeft="10dp"
+        android:text="STRUK PEMESANAN PUPUK\n"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/id_gambar"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="@color/old_white"
+        android:src="@drawable/pupuk"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pupukny"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/id_gambar"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/pupuk" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="290dp"
+        android:layout_toEndOf="@+id/pupukny"
+        android:background="@color/old_white"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="Pupuk serbaguna    RP. 550.000" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-98dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="450dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@+id/pupukny"
+        android:background="@color/old_white"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:text="PAYMENT METHODS: Transfer" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/yelow"
+        android:text="Done"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

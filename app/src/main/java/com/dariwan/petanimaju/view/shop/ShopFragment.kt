@@ -1,14 +1,11 @@
 package com.dariwan.petanimaju.view.shop
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dariwan.petanimaju.R
 import com.dariwan.petanimaju.adapter.ShopAdapter
@@ -20,7 +17,6 @@ class ShopFragment : Fragment() {
 
     private var _binding: FragmentShopBinding? = null
     private val binding get() = _binding!!
-    private lateinit var shopViewModel: ShopFragmentViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +41,6 @@ class ShopFragment : Fragment() {
 
     private fun setupAction() {
         binding.rvShop.layoutManager = LinearLayoutManager(requireContext())
-        shopViewModel = ViewModelProvider(requireActivity())[ShopFragmentViewModel::class.java]
         val dataList: MutableList<ShopModel> = mutableListOf()
         val shopTitle: Array<String> = resources.getStringArray(R.array.title_home)
         val shopPrice: IntArray = resources.getIntArray(R.array.price_home)
@@ -64,26 +59,24 @@ class ShopFragment : Fragment() {
         val adapter = ShopAdapter(dataList)
         binding.rvShop.adapter = adapter
 
-//        val totalPrice = calculateTotalPrice(dataList)
-//        binding.tvNominal.text = "Rp. $totalPrice"
+        val totalPrice = calculateTotalPrice(dataList)
+        binding.tvNominal.text = "Rp. $totalPrice"
 
+        binding.button.setOnClickListener {
+            val intent = Intent(requireContext(), MetodeActivity::class.java)
+            startActivity(intent)
+        }
+    }
 
-//        val shopObserver: Observer<Int> = Observer{ priceTotal ->
-//            binding.tvNominal.setText("Rp. ${priceTotal}")
-//        }
-//        shopViewModel.getTotalPrice().observe(requireActivity(), shopObserver)
+    private fun calculateTotalPrice(dataList: List<ShopModel>): Int {
+        var totalPrice = 0
 
-        adapter.setOnItemClickCallback(object : ShopAdapter.OnItemClickCallback{
-            override fun onItemClicked(data: ShopModel) {
-                shopViewModel.getTotalPrice().observe(viewLifecycleOwner) { totalPrice ->
-                    binding.tvNominal.text = "Rp. $totalPrice"
-                }
+        for (item in dataList) {
+            if (item.isSelected) {
+                totalPrice += item.price
             }
-
-        })
-
-
-
-
+            totalPrice
+        }
+        return totalPrice
     }
 }
